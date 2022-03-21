@@ -1,26 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-             Hello World!  
-    <!--
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
+  <h1 class="center" id="title">freeCodeCamp Survey Form</h1>
+  <p class="center" id="description">Thank you for taking the time to help us improve the platform
+  </p>
+  <div class="center"> 
+
+    <form  action="" id="survey-form">
+      <div class="margin">
+        <label for="name" id="name-label">Name</label>
+        <input class="sixty" required id="name" type="text" placeholder="Enter your name">
+      </div>
+    
+      <div class="margin">
+        <label for="email" id="email-label">Email</label>
+        <input class="sixty" required type="email" id="email" placeholder="Enter your e-mail address">
+      </div>
+      
+      <div class="margin">
+        <label for="number" id="number-label">Number</label>
+        <input class="sixty" type="number" id="number" min="0" max="100" placeholder="Enter any number between 0 - 100">
+      </div>
+      
+      <div class="margin">
+        <label for="dropdown">Select an option</label>
+        <select type="dropdown" id="dropdown" >
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      
+
+      <div class="margin">
+        <h3>Would you recommend us?</h3>
+        <label for="recommendYes">I'd Recommend <input type="radio" name="recommend" id="recommendYes"
+            value="Yes"></label>
+        <label for="recommendNo">I would not recommend <input type="radio" name="recommend" id="recommendNo"
+            value="No"></label>
+        <label for="recommendMaybe">Maybe I'd recommend <input type="radio" name="recommend" id="recommendMaybe"
+            value="Maybe"></label>
+  
+      </div>
+  
+      <div class="margin">
+        <h3>Choose your field(s) of interest?</h3>
+        <label for="frontEndField">Front-end <input type="checkbox" name="field" id="frontEndField"
+            value="FrontEnd"></label>
+        <label for="backEndField">Back-end <input type="checkbox" name="field" id="backEndField" value="Back-End"></label>
+        <label for="dataField">Data Science <input type="checkbox" name="field" id="dataField"
+            value="Data Science"></label>
+  
+      </div>
+      
+      <div class="margin">
+        <h3>Feel free to provide your feedback</h3>
+        <textarea name="" id="additional" cols="30" rows="10"></textarea>
+      </div>
+      
+      
+  
+      <button id="submit">Submit</button>
+    </form>
+
+  </div>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <!--
     Hello Camper!
-
     For now, the test suite only works in Chrome!
     Please read the README below in the JS Editor before beginning.
     Feel free to delete this message once you have read it.
     Good luck and Happy Coding!
-
     - The freeCodeCamp Team
-
     -->
-    <script  src="js/index.js"></script>
-  </body>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
